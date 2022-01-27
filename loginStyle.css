@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: poppins, sans-serif;
+}
+.nav-barre {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* background-color: blueviolet; */
+    justify-content: space-between;
+    align-items: center;
+}
+.log {
+    /* background-color: chartreuse; */
+    margin-left: 10px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    }
+.list {
+    display: flex;
+    /* background-color: darkblue; */
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+.list .login{
+    width: 200px;
+    height: 100px;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+.list .login a{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.list .login a:hover{
+    cursor: pointer;
+}
+.log span{
+    color: #3ba7e5;
+    font-size: 30px;
+    font-weight:40px;
+}
+.log h1{
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+.list li {
+    list-style: none;   
+}
+li #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color:rgb(130, 177, 238) ;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+li #button:hover{
+    cursor: pointer;
+    background-color: rgb(59, 101, 155);
+}
+.list a {
+    text-decoration: none;
+    color: black;
+}
+.menu-l {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 3px;
+}
+.menu-l2 {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin-top: 3px;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+.container{
+    margin-top: 15px;
+    width: 100%;
+    height: 91vh;
+    /* background-color: darkmagenta; */
+    display: flex;
+    align-items:center;
+}
+.deco{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(130, 177, 238);
+    overflow: hidden;
+
+}
+.formule{
+    width: 50%;
+    height: 100%;
+    /* background-color: deeppink; */
+}
+.login-formulaire{
+    padding: 20px;
+}
+.deco-pic{
+    width: 110%;
+    margin-top: 97px;
+}
+.content{
+    color: white;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+.content span{
+    color: black;
+}
+.formule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-formulaire{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.login-formulaire h1{
+    position: absolute;
+    top: 30px;
+}
+.inputs input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    margin-bottom: 20px;
+    outline-color: rgb(130, 177, 238);
+    padding: 4px;
+}
+.no-validation{
+    background-color:rgba(220, 20, 60, 0.26);
+    outline-color:rgba(220, 20, 60, 0.63) ;
+}
+.inputs label{
+    color: rgb(151, 151, 151);
+}
+.login-formulaire a{
+    color: rgb(130, 177, 238);
+}
+.login-formulaire a:hover{
+    color: rgb(59, 101, 155);
+}
+
+
+.submit{
+    font-size: 20px;
+    color: white;
+    border: none;
+    margin-top: 40px;
+    width: 70%;
+    height: 40px;
+    background-color: rgb(130, 177, 238);
+    border-radius: 3px;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgb(59, 101, 155);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:922px) {
+    .formule{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1680px) {
+    .content{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1036px) {
+    .container{
+        flex-direction: column;
+    }
+    .deco{
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+.pic{
+    width: 100%;
+}
+.menu {
+display: block;
+
+}
+.nav-barre {
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.log {
+position: absolute;
+left: 10px;
+top: 10px;
+}
+.log h1{
+    margin-left: 40px;
+}
+.menu {
+position: absolute;
+right: 10px;
+top: 10px;
+}
+.list li {
+margin-top: 10px;
+transition: 2000ms;
+}
+.list a:hover {
+color: rgb(15, 57, 99);
+border-left: 2px solid rgb(130, 177, 238);
+padding-left: 6px;
+}
+.list {
+margin-top: 50px;
+padding: 30px 0px;
+width: 100%;
+height: 100vh;
+/* background-color:cornflowerblue; */
+display: flex;
+flex-direction: column;
+text-align: center;
+display: none;
+}
+.list .login{
+    margin: auto;
+}
+.active {
+display: block;
+background-color: white;
+border-bottom: 3px solid rgb(130, 177, 238);
+padding: 85px;
+z-index: 100;
+}
+
+
+
+
+}

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: poppins, sans-serif;
+}
+body{
+    display: flex;
+}
+.profil{
+    width: 20%;
+    height: 90vh;
+    background-color: #82B1EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.pic-profil{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100px;
+}
+.pic-profil img{
+    width: 200px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deconnection{
+    display: flex;
+    align-self: flex-end;
+}
+.deconnection a{
+    color: white;
+    margin-bottom:72px;
+    margin-right: 30px;
+}
+.dash{
+    width: 80%;
+}
+.table-div{
+    width: 95%;
+    height: 600px;
+    /* background-color: #82B1EE; */
+    margin:0px auto;
+    margin-top: 60px;
+    overflow-y: scroll;
+    /* -ms-overflow-style: none; */
+    /* scrollbar-highlight-color: blue; */
+
+
+}
+#tableau{
+    width: max-content;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table th {
+    padding-top: 12px 0px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #82B1EE;
+    color: white;
+}
+table tr:nth-child(even){
+    background-color: #82b1ee4b;
+}
+table tr:hover {
+    background-color: #ddd;
+}
+
+table a{
+    color: #4a70a1;
+}
+.rest{
+    width: 95%;
+    margin: auto;
+    height: 900px;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    border-radius: 7px;
+    width: max-content;
+    padding: 48px;
+    height: max-content;
+    background-color: white;
+    box-shadow: 3px 4px 19px -2px rgba(141, 141, 141, 0.7) ;
+    -webkit-box-shadow: 3px 4px 19px -2px rgba(141, 141, 141, 0.7) ;
+    -moz-box-shadow: 3px 4px 19px -2px rgba(141, 141, 141, 0.7) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    width: 90%;
+    height: max-content;
+    /* background-color: cadetblue; */
+    /* margin: auto; */
+}
+.form-container form{
+    box-sizing: border-box;
+    padding: 20px;
+}
+textarea{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.input{
+    width: 100%;
+    height: max-content;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: #3B659B;
+    letter-spacing: 2px;
+}
+.form-container input{
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid;
+    outline: #64a8d4;
+    border-radius: 3px;
+    width: 600px;
+    height: 60px;
+    border-radius: 3px;
+}
+.ajouter{
+    border: none;
+    font-size: 20px;
+    background-color: #82B1EE;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+}
+.message{
+    width:300px;
+    height:60px;
+    /* background-color: crimson; */
+    margin: 20px auto;
+}
+#mesInpu{
+    width:300px;
+    height:60px;
+    border-radius: 3px;
+}
+#mesInpu:hover{
+    cursor: pointer;
+    background-color: #3B659B;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .rest{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic-profil{
+        width: 140px;
+        height: 140px;
+
+    }
+    .pic-profil img{
+        width: 140px;
+    }
+    .profil{
+        width: 100%;
+        height: 27vh;
+        flex-direction: row;
+    }
+    .deconnection{
+        width: 66px;
+        height: 31px;
+        font-size: 12px;
+    }
+    .head{
+        width: 269px;
+        flex-direction: row;
+        font-size: 12px;
+        justify-content: space-around;
+    }
+    .dash{
+        width: 100%;
+    }
+    .table-div{
+        width: 98%;
+        height: max-content;
+    }
+    .masquer{
+        display: none;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+.table-div::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 100px;
+    background-color: #64a8d4;
+    background-clip: content-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

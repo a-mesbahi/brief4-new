@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS patiens; 
+
+USE patiens;
+
+CREATE TABLE patien (
+    id int(12) PRIMARY KEY AUTO_INCREMENT,
+    nom varchar(50),
+    prénom varchar(50),
+    date_naissance date,
+    email varchar(50),
+    Num_tel varchar(50),
+    maladie varchar(250)
+    );
